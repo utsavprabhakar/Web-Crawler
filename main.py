@@ -45,6 +45,7 @@ def crawl():
         print(str(len(queued_links)) + ' links in the queue')
         create_jobs()
 
+if __name__ == '__main__':
+    create_workers()
+    crawl()
 
-create_workers()
-crawl()
